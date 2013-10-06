@@ -2,11 +2,16 @@
 
 <p>Welcome to the Barkantine Parents' Group the support group for parents and parents-to-be using the Barkantine Birth Centre</p>
     	
+	<hr>
+
 	<% @news.each do |news| %>
 	<%= news.title %>
 	<% end -%> 
+	
+	<hr>
 	
 	<% @birth_stories.each do |birthstories| %>
 	<%= birthstories.title %>
 	<% end -%> 
 	
+	<hr>
