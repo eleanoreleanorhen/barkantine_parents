@@ -1,0 +1,2 @@
+module BirthStoriesHelper
+end

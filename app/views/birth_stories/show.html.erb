@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @birth_story.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @birth_story.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_birth_story_path(@birth_story) %> |
+<%= link_to 'Back', birth_stories_path %>
