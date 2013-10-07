@@ -1,5 +1,8 @@
 BarkantineParents::Application.routes.draw do
 
+  resources :resources_and_links
+
+
   resources :birth_stories
 
 

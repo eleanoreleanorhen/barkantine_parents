@@ -1,0 +1,2 @@
+module ResourcesAndLinksHelper
+end
