@@ -1,21 +1,21 @@
 <h1>Barkantine Parents</h1>
 
 <p>Welcome to the Barkantine Parents' Group the support group for parents and parents-to-be using the Barkantine Birth Centre</p>
-    	
-	<hr>
+    
 
-	<b>
+<h3 style="border:1px grey solid;">
+  	<b>
 	<% @news.each do |news| %>
 	<%= news.title %>
 	<% end -%> 
-	</b>
+	</b>	
+</h3>
 
-	<hr>
-	
+<h3 style="border:1px grey solid;">
 	<b>
 	<% @birth_stories.each do |birthstories| %>
 	<%= birthstories.title %>
 	<% end -%> 
 	</b>
-	
-	<hr>
+</h3>
+
