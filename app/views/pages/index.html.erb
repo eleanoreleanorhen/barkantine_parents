@@ -1,12 +1,13 @@
 
-	<div style="background-color:silver;border:10px silver solid">
+
+	<div> <!-- style="background-color:silver;border:10px silver solid"> -->
 		<h1>Barkantine Parents</h1>
 
 		<p>Welcome to the Barkantine Parents' Group the support group for parents and parents-to-be using the Barkantine Birth Centre</p>
 	</div>	    
 
-
-	<div style="background-color:white;height:500px;width:16%;float:left;border:10px silver solid">
+<div class="container_12">
+	<div class="grid_2"> <!-- style="background-color:white;height:500px;width:16%;float:left;border:10px silver solid"> -->
 		<h3> About us 
 		</h3>
 		<p> We are a friendly, volunteer run support group for parents and parents-to-be using or hoping to use the Barkantine Birth Centre to share information, tips and stories.  
@@ -15,35 +16,32 @@
 		</p>
 	</div>	
 
-	<div style="background-color:white;height:500px;width:25.5%;float:left;border:10px silver solid;">
+	<div class="content-box grid_3">
 		<h3>
 	  		<b>
-			<% @news.each do |news| %>
-			<%= news.title %>
-			<% end -%> 
+			<%= @news.title %> 
 			</b>	
+			<%= @news.content %>
 		</h3>
+		<%= image_tag "IMG_0499.JPG" %>
 	</div>	
 
-	<div style="background-color:white;height:500px;width:25.5%;float:left;border:10px silver solid;">
+	<div class="content-box grid_3">
 		<h3>
 			<b>
-			<% @resources_and_links.each do |resourcesandlinks| %>
-			<%= resourcesandlinks.title %>
-			<% end -%> 
+			<%= @resources_and_links.title %>
 			</b>
 		</h3>
 	</div>	
 
-	<div style="background-color:white;height:500px;width:25.5%;float:left;border:10px silver solid;">
+	<div class="content-box grid_3">
     	<h3>
 			<b>
-			<% @birth_stories.each do |birthstories| %>
-			<%= birthstories.title %>
-			<% end -%> 
+			<%= @birth_stories.title %>
 			</b>
 		</h3>
+		<%= link_to "Go to birth stories", birth_stories_path %>
 	</div>	
 
-
+</div>
 

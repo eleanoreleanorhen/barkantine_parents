@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def index 
- 	@news = News.all
- 	@birth_stories = BirthStory.all
- 	@resources_and_links = ResourcesAndLink.all
+ 	@news = News.first
+ 	@birth_stories = BirthStory.first
+ 	@resources_and_links = ResourcesAndLink.first
   end
 end
