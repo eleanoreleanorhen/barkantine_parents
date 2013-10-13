@@ -1,5 +1,4 @@
 
-
 	<div> <!-- style="background-color:silver;border:10px silver solid"> -->
 		<h1>Barkantine Parents</h1>
 
@@ -7,23 +6,32 @@
 	</div>	    
 
 <div class="container_12">
-	<div class="grid_2"> <!-- style="background-color:white;height:500px;width:16%;float:left;border:10px silver solid"> -->
-		<h3> About us 
+
+	<div class="content-box grid_2"> <!-- style="background-color:white;height:500px;width:16%;float:left;border:10px silver solid"> -->
+		<h3>  
+			About us 
 		</h3>
 		<p> We are a friendly, volunteer run support group for parents and parents-to-be using or hoping to use the Barkantine Birth Centre to share information, tips and stories.  
-		 <br> <br> <b> We meet on the last Saturday of each month 
-		</b> at the Barkantine between 10am and 1pm.  
+		 <br> 
+		 <br> 
+		 <b> 
+		 	We meet on the last Saturday of each month 
+		</b> 
+			at the Barkantine between 10am and 1pm.  
 		</p>
 	</div>	
 
 	<div class="content-box grid_3">
+	<%= image_tag "IMG_0499.JPG" %>
 		<h3>
 	  		<b>
 			<%= @news.title %> 
 			</b>	
-			<%= @news.content %>
 		</h3>
-		<%= image_tag "IMG_0499.JPG" %>
+		<p>
+			<br>
+			<%= @news.content %>
+		</p>
 	</div>	
 
 	<div class="content-box grid_3">
@@ -32,6 +40,11 @@
 			<%= @resources_and_links.title %>
 			</b>
 		</h3>
+		<p>
+			<br>
+			<%= @resources_and_links.content %>
+		</p>
+		<%= link_to "Go to resources and links", resources_and_links_path %>
 	</div>	
 
 	<div class="content-box grid_3">
@@ -40,6 +53,10 @@
 			<%= @birth_stories.title %>
 			</b>
 		</h3>
+		<p>
+			<br>
+			<%= @birth_stories.content %>
+		</p>
 		<%= link_to "Go to birth stories", birth_stories_path %>
 	</div>	
 
